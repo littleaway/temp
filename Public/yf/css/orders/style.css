@@ -1,0 +1,84 @@
+body{
+	margin: 0px;
+	background-color: #f8f8f8;
+	font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+}
+
+.headbar{
+	background-color: #ff6599;
+	height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.headbar>a{
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	font-size: 19px;
+	text-decoration: none;
+	font-weight: normal;
+}
+.headbar>h3{
+	margin: 0px;
+	color: #fff;
+	font-weight: normal;
+	line-height: 30px;
+	font-size: 23px;
+	text-align: center;
+}
+
+.bookcard{
+	background-color: #fff;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	padding-left: 35px;
+	padding-right: 35px;
+	margin-bottom: 10px;
+}
+.booktime{
+	position: relative;
+	width: 100%;
+	height: 35px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #c8c8c8;
+}
+.booktime>h4,.booktime>h5{
+	position: absolute;
+	margin: 0px;
+	font-weight: normal;
+	font-size: 23px;
+	color: #999999;
+}
+.booktime>h4{
+	top: 0px;
+	left: 0px;
+}
+.booktime>h5{
+	top: 0px;
+	right: 0px;
+}
+.bookdetail{
+	padding-top: 7px;
+	position: relative;
+}
+.bookdetail>p{
+	font-size: 17px;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+.bookdetail>span.price{
+	font-size: 20px;
+	color: #ff6599;
+	position: absolute;
+	top: 60px;
+	right: 0px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+body{
+	margin: 0px;
+	background-color: #f8f8f8;
+	font-family: "Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;
+	padding-top: 50px;
+}
+
+.headbar{
+	background-color: #ff6599;
+	width: 100%;
+	height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+	top: 0px;
+	z-index: 999;
+}
+.headbar>a{
+	color: #fff;
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	font-size: 19px;
+	text-decoration: none;
+	font-weight: normal;
+}
+.headbar>h3{
+	margin: 0px;
+	color: #fff;
+	font-weight: normal;
+	line-height: 30px;
+	font-size: 23px;
+	text-align: center;
+}
+
+.headmanager{
+	height: 55px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	background-color: #fff;
+	z-index: 999;
+	font-size: 10px;
+}
+.headmanager a{
+	overflow: hidden;
+	text-decoration: none;
+}
+.headmanager .headcol{
+	float: left;
+	width: 50%;
+	text-align: center;
+	color: #929292;
+}
+.headmanager .activeheadcol{
+	color: #ff6599;
+}
+.headcol>img{
+	height: 30px;
+	display: block;
+	margin-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.surenow{
+	height: 55px;
+	width: 100%;
+	position: fixed;
+	bottom: 0px;
+	background-color: #fff;
+}
+.surenow #surebutton{
+	display: block;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95px;
+	height: 31px;
+	border-radius: 5px;
+	border: none;
+	background-color: #ff6599;
+	color: #fff;
+	font-size: 15px;
+}
+
+
+.centercontent a{
+	position: relative;
+	display: block;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	margin-left: 13px;
+	margin-right: 13px;
+	border-bottom: 1px solid #c8c8c8;
+	text-decoration: none;
+	font-size: 18px;
+	color: #999999;
+}
+.centercontent img{
+	position: absolute;
+	height: 20px;
+	top: 20px;
+	right: 0px;
+}
+
+
+
+
+
+
+

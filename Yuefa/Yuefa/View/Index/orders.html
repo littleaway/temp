@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>我的预约</title>
+	<meta name="keywords" content="约发">
+	<meta name="description" content="约发">
+	
+	<!-- 浏览器配置 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+	<!-- 样式和图标引入 -->
+	<link rel="stylesheet" href="__CSS__/orders/style.css">
+</head>
+<body>
+	<header class="headbar">
+		<a href="" onclick="javascript:history.go(-1)">返回</a>
+		<h3>我的预约</h3>
+	</header>
+
+	<section class="bookcontent">
+		<foreach name="orders" item="vo" >
+			   <div class="bookcard">
+					<div class="booktime">
+						<h4>{$vo['order_time']|date="Y-m-d",###}</h4>
+						<h5>{$vo['order_time']|date="H:i",###}</h5>
+					</div>
+					<div class="bookdetail">
+						<p>预约昵称：{$vo['name']}</p>
+						<p>预约电话：{$vo['tel']}</p>
+						<p>预约老师：{$vo['barber_name']}</p>
+						<p>美发类型：{$vo['type_name']}</p>
+						<p>店铺位置：{$vo['position']}</p>
+						<span class="price">{$vo['cost']}元</span>
+					</div>
+				</div> 
+		</foreach>
+	</section>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

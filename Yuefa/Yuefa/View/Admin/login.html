@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="keywords" content="约发">
+	<meta name="description" content="约发">
+	
+	<!-- 浏览器配置 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	
+   <title>登陆</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css">
+<script type="text/javascript" src="__JS__/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__CSS__/globel.css">
+</head>
+
+<body>
+<br/><br/><br/>
+<div align="center">
+<form method="post" runat="form" class="form-inline" action="{:U('Yuefa/Admin/login')}">
+<div class="form-group" style="border:#0099FF solid 2px; padding:20px;">
+<lable><strong>用户名</strong></lable>&nbsp;&nbsp;<input name="username" type="text" class="form-control" /><br/><br/><br/>
+<lable><b>密码</b></lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="password" type="password" class="form-control" /><br/><br/><br/>
+<lable><b>验证码</b></lable>&nbsp;&nbsp;<input name="vcode" type="text" class="form-control" /><br/><img src="{:U('Yuefa/Admin/verify')}" id="code" onclick="javascript:this.src='{:U('Yuefa/Admin/verify')}?tm='+Math.random()" /><br/>
+<button type="submit" class="btn btn-primary">提交</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button type="reset"class="btn btn-destory">取消</button>
+</div>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="keywords" content="约发">
+	<meta name="description" content="约发">
+	
+	<!-- 浏览器配置 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	
+   <title></title>
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css">
+<script type="text/javascript" src="__JS__/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>图片管理>>上传图片</h2>
+    </div>
+	  <div class="container">
+      <table class="table" id="bigtable">
+	  <form runat="form" action="">
+      <div class="form-group">
+	  <th valign="top">选择图片</th>
+	  <td>
+      <input type="file" class="form-control" size="30">
+	  </td>
+	  </tr>
+      </div>
+          <tr>
+		    <th valign="top">标签</th>
+            <td><div class="form-group">
+			   <label class="checkbox-inline">
+               <input type="checkbox">时尚短发
+               </label>
+			   <label class="checkbox-inline">
+               <input type="checkbox">日韩长发
+               </label>
+			   <label class="checkbox-inline">
+               <input type="checkbox">甜美可爱
+               </label>
+		  </div>
+		  <div class="form-group">
+			   <label class="checkbox-inline">
+               <input type="checkbox">时尚短发
+               </label>
+			   <label class="checkbox-inline">
+               <input type="checkbox">日韩长发
+               </label>
+			   <label class="checkbox-inline">
+               <input type="checkbox">甜美可爱
+               </label>
+		  </div>
+		  </td>
+          </tr>
+		  <tr><th valign="top">发型师</th>
+		  <td>
+          <div class="form-group">
+		  <select class="form-control" onFocus="getmessage()" style="width:200px">
+	     <option value="阿吉">阿吉</option>
+		  </select>
+		  </div>
+		  </td>
+		  </tr>
+		  <tr><th valign="top">发型介绍</th>
+		  <td>
+          <div class="form-group">
+		  <textarea rows="3" cols="30"></textarea>
+		  </div>
+		  </td>
+		  </tr>
+		  <tr><th valign="top">适合脸型</th>
+		  <td>
+          <div class="form-group">
+		  <textarea rows="3" cols="30"></textarea>
+		  </div>
+		  </td>
+		  </tr>
+		  <tr><td colspan="2">
+		  <input type="submit" class="btn btn-primary">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  <button type="button" class="btn btn-danger" onClick="window.location.href='index_3.html'">返回</button>
+		  </td></tr>
+		  </form>
+      </table>
+	  </div>
+<script>
+function getmessage(){
+$.post(
+'',
+function(data){
+   $('select').html(data);
+}
+)
+}
+</script>
+</body>
+</html>

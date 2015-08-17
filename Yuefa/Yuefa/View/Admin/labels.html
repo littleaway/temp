@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="keywords" content="约发">
+	<meta name="description" content="约发">
+	
+	<!-- 浏览器配置 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	
+   <title>Bootstrap 实例 - 响应式表格</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css">
+<script type="text/javascript" src="__JS__/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__CSS__/globel.css">
+   <style type="text/css">
+   #navbtn{
+   background:url(/Public/yf/images/add.png) no-repeat;
+   width:48px;
+   height:48px;
+   border:0px;
+   }
+   .backtr td{
+   background-image:url(/Public/yf/images/dotted.jpg);
+   background-position:center;
+   background-repeat:no-repeat;
+   width:25%;
+   padding:10px;
+   height:250px
+   }
+   </style>
+</head>
+<body>
+<!--标签导航-->
+<ul id="myTab" class="nav nav-tabs">
+   <li><a href="#tab2" data-toggle="tab" aria-expanded="true"><h4>tab2</h4></a></li>
+   <li><button type="button" class="btn" id="navbtn" data-toggle="modal" data-target="#myModal">
+   </button></li>
+</ul>
+<!--淡入淡出标签页-->
+
+<div class="tab-content">
+    <div class="tab-pane fade divfather" id="tab2">
+	<table width="90%" align="center" class="table-bordered"><tr>
+	  <td colspan="2" align="left"></td>
+	  <td colspan="2" align="right"><button type="button" class="btn btn-danger removetab">删除标签</button></td>
+	  </tr>
+	  <tr class="backtr">
+	  <td align="center"><img src="/Public/yf/images/example.jpg"></td>
+    <td align="center"><img src="/Public/yf/images/example.jpg"></td>
+    <td align="center"><img src="/Public/yf/images/example.jpg"></td>
+    <td align="center"><img src="/Public/yf/images/example.jpg"></td>
+	  </tr>
+	  <tr class="backtr">
+	  <td align="center"><img src="/Public/yf/images/example.jpg"></td>
+    <td align="center"><img src="/Public/yf/images/example.jpg"></td>
+    <td align="center"><img src="/Public/yf/images/example.jpg"></td>
+    <td align="center"><img src="/Public/yf/images/example.jpg"></td>
+	  </tr>
+	  </table>
+   </div>
+</div>
+<!--模态对话框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+			 &times;
+            </button>
+         </div>
+         <div class="modal-body">
+              <form role="form">
+                  <div class="form-group">
+                  <label for="name">标签名称</label>
+                   <input type="text" class="form-control" id="name">
+                  </div>
+			  </form>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">关闭
+            </button>
+            <button type="button" class="btn btn-primary" id="submit">
+               提交更改
+            </button>
+         </div>
+      </div>
+   </div>
+</div>
+<script>
+$(document).ready(function(){
+   <!--弹出框清空-->
+   $('#myModal').on('show.bs.modal',function(){
+       $("#name").val("");
+   });
+   
+    /*<!--添加div-->
+    function  addTabDiv(divid){
+    $("#myTabContent").append($("<div></div>").attr('id',divid).addClass('tab-pane in divfather').text(divid));
+	$("<table></table>").attr({'width':"90%",'align':"center"}).addClass('table-bordered').append("<tr><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td></tr>").appendTo("#myTabContent>div:last");
+	$("#myTabContent>div:last td:eq(0)").attr({'colspan':'2','align':'left'});
+	$("#myTabContent>div:last td:eq(1)").attr({'colspan':'2','align':'right'});
+	$("<input>").attr('type','file').appendTo("#myTabContent>div:last td:eq(0)");
+	$("<button></button>").attr('type','button').addClass('btn btn-danger removetab').text('删除标签').appendTo("#myTabContent>div:last td:eq(1)");
+	$("#myTabContent>div:last tr:gt(0)").addClass('backtr');
+	$("#myTabContent>div:last tr:gt(0) td").attr('align','center');
+	}
+	<!--添加tab-->
+	function  addTab(divid,tabname){
+	$("#myTab").prepend($("<li></li>"));
+	$("#myTab>li").removeClass("active");
+	$("<a></a>").attr({
+	 'href':'#'+divid,
+	'data-toggle':"tab"}).html("<h4>"+tabname+"</h4>").appendTo("#myTab>li:first");
+	$("#myTab a:first").tab('show');
+	}
+	
+    <!--初始化标签和标签页-->
+	var arrtabs=['直发','卷发'];  //服务器获得
+	for(var j=0;j<arrtabs.length;j++){
+	var iniidindex='';
+    for(var i=0;i<2;i++)
+    iniidindex+=String.fromCharCode(parseInt(Math.random()*25+66));
+	addTab(iniidindex,arrtabs[j]);
+	addTabDiv(iniidindex);
+	}*/
+	//$("#myTab>li:first").addClass('active');
+
+   <!--删除标签和标签页-->
+   $("body").on('click',".removetab",function(){
+       var YN=confirm('是否确认删除此标签');
+	   if(YN==true){
+       $(this).parents('.divfather').remove();
+	   $('a').filter("[href='#"+$(this).parents('.divfather').attr('id')+"']").parents('li').remove();;
+	   $("#myTab a:first").tab('show');
+	   }
+   });
+   
+   <!--添加标签和标签页-->
+   $("#submit").on('click',function(){
+      var tab=$.trim($("#name").val());  //传递到服务器
+      $("#myModal").modal('hide');
+	 
+	  if($("#myTab li").length>5){
+	      $("#navbtn").css("display","none");
+	  }
+	  
+	  if($.trim($("#name").val()).length>0){
+		  var idindex='';
+          for(var i=0;i<2;i++)
+          idindex+=String.fromCharCode(parseInt(Math.random()*25+66));
+	  	  <!--调用添加div元素  -->
+		  addTabDiv(idindex);
+	      <!--调用添加标签-->
+		  addTab(idindex,tab);
+	  }
+   });
+	  /*<!--t初始化添加table图片-->
+	  $('body').on('show.bs.tab','a[data-toggle="tab"]',function (e) {
+      var activeTab = $(e.target).text(); 
+      // 获取前一个激活的标签页的名称
+      var previousTab = $(e.relatedTarget).text(); 
+      $(".active-tab span").html(activeTab);
+      $(".previous-tab span").html(previousTab);
+      })
+	  <!--动态添加table图片-->
+	  
+	  <!--动态删除table图片-->
+	  $("button[class='close']").on('click',function(){
+	  $(this).parents('td').empty();
+	  });*/
+	  
+});
+</script>
+</body>
+</html> 	

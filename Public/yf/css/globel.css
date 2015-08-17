@@ -1,0 +1,17 @@
+   body{
+   padding:20px;
+   }
+   #bigtable th{
+   font-size:16px;
+	text-align:center;
+	border:#FFCC99 solid 2px;
+   }
+    #bigtable td,th{
+	text-align:center;
+	border:#FFCC99 solid 2px;
+   }
+   lable{
+   font-size:14px;
+   font-weight:300
+   }
+

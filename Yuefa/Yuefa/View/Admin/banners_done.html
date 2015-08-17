@@ -1,0 +1,36 @@
+﻿<html><head>
+<meta charset="utf-8">
+<title>轮播图</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script type="text/javascript" src="jquery-2.1.4.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="globel.css">
+</head>
+
+<body>
+<div class="container">
+  <table class="table table-bordered" id="bigtable">
+    <thead>
+      <tr>
+        <th>位置</th>
+        <th>图片</th>
+        <th>链接</th>
+    <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+    <form role="form" method="post" action="{:U('Yuefa/Admin/addBanners')}" enctype="multipart/form-data">
+        <td><input type="text" name="rank" class="form-control"></td>
+        <td><input type="file" name="file" class="form-control"></td>
+        <td><input type="text" name="link" class="form-control"></td>
+    <td><input type="submit" class="btn btn-primary">
+    <input type="reset" class="btn btn-destory" td="">
+    
+      </td></form></tr>
+        </tbody>
+  </table>
+</div>
+
+
+</body></html>

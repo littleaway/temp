@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="keywords" content="约发">
+	<meta name="description" content="约发">
+	
+	<!-- 浏览器配置 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	
+   <title>Bootstrap 实例 - 响应式表格</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css">
+<script type="text/javascript" src="__JS__/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__CSS__/globel.css">
+   <style>
+   #bigtable img[id='logo_img']{
+   width:150px;
+   }
+   #smalltable td{
+   border:#336699 1px solid;
+   }
+   </style>
+</head>
+
+<body>
+<!--
+<?php
+echo $_GET['keyword'];
+?>
+-->
+<form method="post" action="{:U('Yuefa/Admin/barbersAdd')}" enctype="multipart/form-data">
+<table class="table table-hover table-responsive" id="bigtable" width="90%">
+   <thead>
+    <tr>
+		<th width="10%">姓名</th>
+		<th width="10%">头像</th>
+		<th width="20%">个人简介</th>
+		<th width="20%">擅长发型</th>
+		<th width="30%">价目表</th>
+		<th width="10%">操作</th>
+    </tr>
+   </thead>
+   <tbody>
+        <tr>
+        	<input type="hidden" name="id">
+		      <td><input type="text" name="name"></td>
+		      <td><input type="file" name="file">
+			  </td>
+		      <td><input type="text" name="message"></td>
+		      <td><input type="text" name="major"></td>
+		      <td style="padding:20px">
+			        <table class="table able-bordered " id="smalltable">
+			            <tr>
+						<td><input type="text" name="item[]"></td>
+						<td><input type="text" name="cost[]"></td>
+						</tr>
+			        </table>
+					<a href="#"><img src="/Public/yf/images/cross.png"></a>
+			  </td>
+			  <td>
+			  <input type="submit" class="btn btn-primary" value="提交">
+			  </td>
+		</tr>
+   </tbody>
+</table>
+</form>
+<script>
+$(document).ready(function(){
+     $('a[href="#"]').on('click',function(){
+	       var newtr=$('<tr><td></td><td></td></tr>');
+	       newtr.children("td:eq(0)").append($("<input>").attr({type:'text',name:'item[]',value:''}));
+	       newtr.children("td:eq(1)").append($("<input>").attr({type:'text',name:'cost[]',value:''}));
+		   newtr.appendTo('#smalltable');
+	 });
+	 $('body').on('click','.dismissbtn',function(){
+	      $(this).parent().remove();
+	 });
+});
+</script>
+</body>
+</html>

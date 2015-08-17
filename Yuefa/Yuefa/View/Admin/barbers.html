@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="keywords" content="约发">
+	<meta name="description" content="约发">
+	
+	<!-- 浏览器配置 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	
+   <title>Bootstrap 实例 - 响应式表格</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css">
+<script type="text/javascript" src="__JS__/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__CSS__/globel.css">
+   <style>
+   #bigtable img{
+   width:150px;
+   }
+   .smalltable{
+   padding:5px;
+   width:100%;
+   }
+   .smalltable td{
+   border:#3333FF solid 1px;
+   }
+   li a{
+   cursor:default;
+   }
+   </style>
+</head>
+<body>
+<table class="table table-hover table-responsive" id="bigtable" width="90%">
+   <thead>
+    <tr>
+		<th width="10%">姓名</th>
+		<th width="10%">头像</th>
+		<th width="20%">个人简介</th>
+		<th width="20%">擅长发型</th>
+		<th width="30%">价目表</th>
+		<th width="10%">操作</th>
+    </tr>
+   </thead>
+   <tbody>
+
+      <foreach name="userinfo" item="vo" >
+        <tr>
+          <td class="name">{$vo.name}</td>
+          <td><img src="{$vo.headpic}"></td>
+          <td>{$vo.details}</td>
+          <td>{$vo.expert}</td>
+          <td style="padding:20px">
+              <table class="smalltable">
+                <foreach name="vo['table']" item="item" >
+                  <tr>
+                  <td>{:$item[0]}</td>
+                  <td>{:$item[1]}</td>
+                  </tr>
+                </foreach>
+              </table>
+        </td>
+        <td>
+        <a href="{:U('Yuefa/Admin/barbersUpdate')}?id={$vo.bid}"><button class="btn btn-primary">修改</button></a>
+        </td>
+        </tr>
+      </foreach>
+   </tbody>
+</table>
+<a href="{:U('Yuefa/Admin/barbersAdd')}"><img src="/Public/yf/images/cross.png"></a>
+<br/>
+<center>
+  {:$page}
+</center>
+<script>
+<!--添加新纪录-->
+$(document).ready(function(){
+// $('body').on('click','button',function(){
+//     var keyword=$(this).parents('tr').children('.name').text();
+// 	window.location.href="{:U('Yuefa/Admin/barbers_done')}?id="+keyword;
+// });
+// <!--添加分页-->
+// var sumrecord,pagenum;
+// sumrecord=18;
+// pagenum=Math.ceil(sumrecord/8);
+// for(var i=1;i<=pagenum;i++)
+// $(".pagination li:last").before($("<li></li>").append($("<a>"+i+"</a>").attr('onClick','postjson('+i+')')));
+//$(".pagination a:contains('1')").trigger('click');
+});
+// <!--点击分页,ajax添加html-->
+// function postjson(page){
+//    $(".pagination li:first").attr('onClick','postjson('+(page-1)+')')
+//    $(".pagination li:last").attr('onClick','postjson('+(page+1)+')')
+//    $(".pagination li").removeClass('active');
+//    $(".pagination li:contains("+page+")").addClass('active');
+//    $("#bigtable").empty();
+//    $.post(
+//    '',
+//    {page:page},
+//    function(data)
+//    {
+//       $("#bigtable").html(data);
+//    }
+//    )
+// }
+</script>
+</body>
+</html>

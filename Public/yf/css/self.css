@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	text-align:center !important;
+	
+	}
+
+td img {
+	width:"30%";
+	height:auto;
+	text-align:center;
+	text-height:auto;
+	}
+td a.link {
+	width:"60%";
+	text-align:center;
+	}
+.wid {
+	width:"30%";
+	}
+th  {
+    text-align:center;
+}
+th  td {
+    text-align:center;
+	
+}
+td a {
+    text-align:center;
+	text-top:30px;
+}
+a {display:inline-block;}
+
+#sure1,#sure2,#sure3,#sure4,#sure5,#cancel1,#cancel2,#cancel3,#cancel4,#cancel5 {
+    display:none;
+}
+
+button {display:inline-block;}
+
+._box 
+{ 
+
+left:20px;
+display:inline-block;
+position: relative; 
+width: 70px; 
+height: 37px; 
+background-color:#999; 
+background-image: url(images/bg.png); 
+background-repeat: no-repeat; 
+background-position: 0 0; 
+background-attachment: scroll; 
+line-height: 37px; 
+text-align: center; 
+color: white; 
+cursor: pointer; 
+overflow: hidden; 
+z-index: 1; 
+} 
+._box input 
+{ 
+position: absolute; 
+width: 50px; 
+height: 40px; 
+line-height: 40px; 
+font-size: 23px; 
+opacity: 0; 
+filter: "alpha(opacity=0)"; 
+filter: alpha(opacity=0); 
+-moz-opacity: 0; 
+left: -5px; 
+top: -2px; 
+cursor: pointer; 
+z-index: 2; 
+} 
+
+

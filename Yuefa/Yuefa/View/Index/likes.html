@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>我赞过的</title>
+	<meta name="keywords" content="约发">
+	<meta name="description" content="约发">
+	
+	<!-- 浏览器配置 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+	<!-- 样式和图标引入 -->
+	<link rel="stylesheet" href="__CSS__/likes/style.css">
+</head>
+<body>
+	<header class="headbar">
+		<a href="" onclick="javascript:history.go(-1)">返回</a>
+		<h3>我赞过的</h3>
+	</header>
+
+	<nav class="headmanager">
+		<a href="">
+			<div class="headcol">
+				<img src="__IMG__/likes/toufa2.png">
+				<span>选发型</span>
+			</div>
+		</a>
+		<a href="">
+			<div class="headcol activeheadcol">
+				<img src="__IMG__/likes/yonghu2.png">
+				<span>我的约发</span>
+			</div>
+		</a>
+	</nav>
+	
+
+	<section class="masterworksshow">
+		<div class="workscardwrap">
+			<div class="inlinecol linecol1">
+			</div>
+			<div class="inlinecol linecol2">
+			</div>
+		</div>
+	</section>
+
+
+<script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	// 点赞功能
+	$(".workscardwrap").delegate(".carddetail>img","click", function(){
+		var thisRef = $(this);
+		var likednumber = thisRef.parent().find("span").text();
+		var id = thisRef.parents(".workscard").attr("id");
+		likednumber++
+
+		if (thisRef.data("done")===undefined) {
+			
+			// 写入提交赞的URL
+			thisRef.data("done",true);
+			$.post(
+				"{:U('Yuefa/Api/Like')}"
+				, { "id": id },function(){
+				thisRef.parent().find("span").text(likednumber);
+			});
+		}
+	});
+
+	// 瀑布流功能
+	var	page=1;
+	var col=1;
+	window.onscroll=function(event) {
+
+		scrollTop=document.body.scrollTop;
+		viewH=document.documentElement.clientHeight;
+		contentH =document.body.scrollHeight;
+
+
+		if(contentH-(viewH+scrollTop)<10){
+
+			if ($("#loadpic").length==0) {
+				$(".masterworksshow").append("<p style='text-align: center;' id='loadpic'>正在加载...</p>");
+			}
+			// 写入获取信息的URL
+			$.getJSON(
+				'{:U("Yuefa/Api/Style")}',
+				function(Results, textStatus) {
+					$.each(Results.result.details, function(index, card) {
+						var picurl=card['picurl'];
+						var piclink=card['piclink'];
+						var headurl=card['headurl'];
+						var headlink=card['headlink'];
+						var mastername=card['mastername'];
+						var likednumber=card['likednumber'];
+						var id=card['id'];
+						var str = "<div id='"+id+"' class='workscard'><a href="+piclink+"><img src='"+picurl+"'></a><div class='carddetail'><a href='"+headlink+"'><div class='headpic' style=\"background-image: url('"+headurl+"');\"></div></a><h3>"+mastername+"</h3><img src='__IMG__/likes/heart.png'><span>"+likednumber+"</span></div></div>"
+						$(".linecol"+col).append(str);
+						col=(col===1?2:1);
+					});
+					page++;
+				}
+			);
+		}
+	}
+
+});
+</script>
+
+
+
+
+
+
+</body>
+</html>

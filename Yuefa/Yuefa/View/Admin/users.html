@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="keywords" content="约发">
+	<meta name="description" content="约发">
+	
+	<!-- 浏览器配置 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	
+   <title>Bootstrap 实例 - 响应式表格</title>
+<link rel="stylesheet" type="text/css" href="__CSS__/bootstrap.min.css">
+<script type="text/javascript" src="__JS__/jquery-2.1.4.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="__CSS__/globel.css">
+   <style>
+   li a{
+   cursor:default;
+   }
+   </style>
+</head>
+<body>
+<table class="table table-bordered  table-hover" width="90%" id="bigtable">
+      <thead><tr>
+	  <th width="30%">时间</th>
+	  <th width="30%">名称</th>
+	  <th width="40%">手机号</th>
+	  </tr></thead>
+	  <tbody>
+      <foreach name="userinfo" item="vo" >
+        <tr><td>{$vo.insert_time|date="Y年m月d日 H:i:s",###}</td>
+        <td>{$vo.name}</td>
+        <td>{$vo.tel}</td></tr>
+      </foreach>
+	  </tbody>
+</table>
+<br/>
+<center>
+  {:$page}
+</center>
+<script>
+// $(document).ready(function(){
+// <!--添加分页-->
+// var sumrecord,pagenum;
+// sumrecord=18;
+// pagenum=Math.ceil(sumrecord/8);
+// for(var i=1;i<=pagenum;i++)
+// $(".pagination li:last").before($("<li></li>").append($("<a>"+i+"</a>").attr('onClick','postjson('+i+')')));
+// //$(".pagination a:contains('1')").trigger('click');
+// });
+// <!--点击分页,ajax添加html-->
+// function postjson(page){
+//    $(".pagination li:first").attr('onClick','postjson('+(page-1)+')')
+//    $(".pagination li:last").attr('onClick','postjson('+(page+1)+')')
+//    $(".pagination li").removeClass('active');
+//    $(".pagination li:contains("+page+")").addClass('active');
+//    $("#bigtable").empty();
+//    $.post(
+//    '',
+//    {page:page},
+//    function(data)
+//    {
+//       $("#bigtable").html(data);
+//    }
+//    )
+// }
+// </script>
+</body>
+</html>
