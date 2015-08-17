@@ -30,21 +30,23 @@ class ApiController extends Controller {
     }
     public function Style(){
 		$labelid=I('get.labelid');
-//		$page_num=I('get.page',1);
-//		$Model=new \Think\Model();
-//		$PAGE_LIMIT=4;
+//		echo $labelid;		
+		$page_num=I('get.page',1);
+//		echo $page_num;
+		$Model=new \Think\Model();
+		$PAGE_LIMIT=4;
     	if ($labelid>0) {
-    		$style=M('relation_label_style')->where('fk_label = '.$labelid)->join('__STYLE__ ON __STYLE__.sid = __RELATION_LABEL_STYLE__.fk_style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->order('yf_style.insert_time')->page(I('get.page',1).',8')->select();
-			$style_num=M('relation_label_style')->where('fk_label = '.$labelid)->join('__STYLE__ ON __STYLE__.sid = __RELATION_LABEL_STYLE__.fk_style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->count();
-//			$GetInfo='call GetInfoByLabAndPage('.$labelid.','.$page_num.','.$PAGE_LIMIT.')';
+//    		$style=M('relation_label_style')->where('fk_label = '.$labelid)->join('__STYLE__ ON __STYLE__.sid = __RELATION_LABEL_STYLE__.fk_style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->order('yf_style.insert_time')->page(I('get.page',1).',8')->select();
+//			$style_num=M('relation_label_style')->where('fk_label = '.$labelid)->join('__STYLE__ ON __STYLE__.sid = __RELATION_LABEL_STYLE__.fk_style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->count();
+			$GetInfo='call GetInfoByLabAndPage('.$labelid.','.$page_num.','.$PAGE_LIMIT.')';
     	}else{
-			$style=M('style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->order('yf_style.insert_time')->page(I('get.page',1).',8')->select();
-			$style_num=M('style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->count();
-//			$GetInfo='call GetHomeInfo('.$page_num.','.$PAGE_LIMIT.')';
+//			$style=M('style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->order('yf_style.insert_time')->page(I('get.page',1).',8')->select();
+//			$style_num=M('style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->count();
+			$GetInfo='call GetHomeInfo('.$page_num.','.$PAGE_LIMIT.')';
     	}
 
-//		$style=$Model->query($GetInfo);
-//		$style_num=count($style);
+		$style=$Model->query($GetInfo);
+		$style_num=count($style);
 
 		if ($style_num>=0&&$style!=null){
 		for ($i=0; $i < count($style); $i++) { 
@@ -56,7 +58,9 @@ class ApiController extends Controller {
 					'headlink' =>U('Index/Barber').'?bid='.$style[$i]['bid'],
 					'mastername' =>$style[$i]['name'] , 
 //					'likednumber' =>M('user_like')->where('fk_sid = '.$style[$i]['sid'])->count(),
-					'likednumber'=>$style[$i]['likes']
+					'likednumber'=>$style[$i]['likes'],
+					'page_num'=>$page_num,
+					'labelid'=>$labelid
 					);
 		}
 		$re_data=array(
@@ -100,8 +104,9 @@ class ApiController extends Controller {
     }
     public function Like()
     {
-		$id=I('get.id',0);
-
+		$id=I('post.id',0);
+	var_dump($id);
+	var_dump(session('uid'));
     	if (session('uid')&&$id){
 	    	$temp=M('user_like')->where("fk_uid = ".session('uid')." AND fk_sid =".$id)->find();
 	    	if ($temp) {

@@ -1,0 +1,2767 @@
+[ 2015-08-18T03:44:16+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000752s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2015-08-18T03:44:17+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  ORDER BY yf_style.insert_time LIMIT 0,8   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-18T03:44:21+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  ORDER BY yf_style.insert_time LIMIT 8,8   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-18T03:44:36+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000067s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000111s ]
+
+[ 2015-08-18T03:44:37+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  ORDER BY yf_style.insert_time LIMIT 0,8   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2015-08-18T03:44:38+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  ORDER BY yf_style.insert_time LIMIT 8,8   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2015-08-18T03:44:41+08:00 ] 123.138.79.12 /temp/index.php/Api/Like.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+
+[ 2015-08-18T03:44:44+08:00 ] 123.138.79.12 /temp/index.php/Api/Like.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+
+[ 2015-08-18T03:44:46+08:00 ] 123.138.79.12 /temp/index.php/Api/Like.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+
+[ 2015-08-18T03:47:57+08:00 ] 123.138.79.12 /temp/index.php/Api/Like?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `yf_user_like` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_user_like` WHERE ( fk_uid = 1 AND fk_sid =6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `yf_user_like` (`fk_uid`,`fk_sid`,`insert_ime`) VALUES ('1','6','1439840877') [ RunTime:0.0022s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 122 行.
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 122 行.
+SQL: SELECT `likes` FROM `yf_style` WHERE ( sid=6 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `yf_style` SET `likes`='1' WHERE ( sid=6 ) [ RunTime:0.0018s ]
+
+[ 2015-08-18T03:48:23+08:00 ] 123.138.79.12 /temp/index.php/Api/Like?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+
+[ 2015-08-18T03:49:21+08:00 ] 123.138.79.12 /temp/index.php/Api/Like?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `yf_user_like` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_user_like` WHERE ( fk_uid = 1 AND fk_sid =6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `yf_user_like` WHERE `ulid` = 1 [ RunTime:0.0031s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 109 行.
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 109 行.
+SQL: SELECT `likes` FROM `yf_style` WHERE ( sid=6 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yf_style` SET `likes`='0' WHERE ( sid=6 ) [ RunTime:0.0024s ]
+
+[ 2015-08-18T03:49:49+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004249s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2015-08-18T03:49:50+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  ORDER BY yf_style.insert_time LIMIT 0,8   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-18T03:49:54+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  ORDER BY yf_style.insert_time LIMIT 8,8   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2015-08-18T03:49:56+08:00 ] 123.138.79.12 /temp/index.php/Api/Like.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+
+[ 2015-08-18T03:51:53+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000168s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2015-08-18T03:51:54+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  ORDER BY yf_style.insert_time LIMIT 0,8   [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2015-08-18T03:51:57+08:00 ] 123.138.79.12 /temp/index.php/Api/Like.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `yf_user_like` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_user_like` WHERE ( fk_uid = 1 AND fk_sid =5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `yf_user_like` (`fk_uid`,`fk_sid`,`insert_ime`) VALUES ('1','5','1439841117') [ RunTime:0.0027s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 123 行.
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 123 行.
+SQL: SELECT `likes` FROM `yf_style` WHERE ( sid=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yf_style` SET `likes`='1' WHERE ( sid=5 ) [ RunTime:0.0018s ]
+
+[ 2015-08-18T03:52:38+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2015-08-18T03:52:40+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  ORDER BY yf_style.insert_time LIMIT 0,8   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `yf_style` INNER JOIN yf_barber ON yf_barber.bid = yf_style.fk_bid  LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2015-08-18T03:58:05+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005569s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000107s ]
+
+[ 2015-08-18T03:58:05+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T03:58:08+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T03:58:08+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T03:58:10+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0011s ]
+
+[ 2015-08-18T03:58:11+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: call GetInfoByLabAndPage(2,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T03:58:12+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: call GetInfoByLabAndPage(3,1,4) [ RunTime:0.0010s ]
+
+[ 2015-08-18T03:58:13+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0011s ]
+
+[ 2015-08-18T03:58:14+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=4&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: call GetInfoByLabAndPage(4,4,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T03:58:14+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=5&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: call GetInfoByLabAndPage(4,5,4) [ RunTime:0.0010s ]
+
+[ 2015-08-18T03:58:16+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T03:58:19+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003652s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2015-08-18T03:58:19+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T03:58:28+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T03:58:29+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T03:58:30+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetInfoByLabAndPage(2,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T03:58:30+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetInfoByLabAndPage(3,1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T03:58:31+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: call GetInfoByLabAndPage(2,1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T03:58:32+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T03:58:32+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T03:58:33+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000120s ]
+SQL: call GetInfoByLabAndPage(3,1,4) [ RunTime:0.0015s ]
+
+[ 2015-08-18T03:58:34+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T03:58:34+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0010s ]
+
+[ 2015-08-18T03:58:34+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2015-08-18T03:58:35+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T03:58:41+08:00 ] 123.138.79.12 /temp/index.php/Index/home.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000077s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2015-08-18T03:58:42+08:00 ] 123.138.79.12 /temp/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2015-08-18T03:58:43+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T03:58:50+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000115s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2015-08-18T03:58:51+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:13:24+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004263s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2015-08-18T04:13:25+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:13:26+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:13:26+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:13:28+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=4&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
+SQL: call GetHomeInfo(4,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:13:33+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006462s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006532s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000118s ]
+
+[ 2015-08-18T04:13:34+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:13:40+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2015-08-18T04:13:41+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:13:45+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2015-08-18T04:13:45+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:13:48+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000116s ]
+
+[ 2015-08-18T04:13:48+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:14:06+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:14:06+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetInfoByLabAndPage(2,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:14:07+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: call GetInfoByLabAndPage(3,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:14:08+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:14:09+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:14:09+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000145s ]
+SQL: call GetInfoByLabAndPage(2,1,4) [ RunTime:0.0011s ]
+
+[ 2015-08-18T04:14:10+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: call GetInfoByLabAndPage(3,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:14:10+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:14:11+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: call GetInfoByLabAndPage(2,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:14:12+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000117s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:14:13+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:14:14+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: call GetInfoByLabAndPage(2,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:14:14+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:14:15+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:14:15+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:14:16+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: call GetInfoByLabAndPage(3,1,4) [ RunTime:0.0010s ]
+
+[ 2015-08-18T04:18:11+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000209s ]
+
+[ 2015-08-18T04:18:12+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000119s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:18:24+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:18:26+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:18:27+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: call GetInfoByLabAndPage(2,1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:18:28+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000136s ]
+SQL: call GetInfoByLabAndPage(3,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:18:29+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:18:29+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:18:30+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+SQL: call GetInfoByLabAndPage(2,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:18:30+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: call GetInfoByLabAndPage(3,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:18:31+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:18:31+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:18:32+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000117s ]
+SQL: call GetInfoByLabAndPage(1,1,4) [ RunTime:0.0011s ]
+
+[ 2015-08-18T04:18:32+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: call GetInfoByLabAndPage(2,1,4) [ RunTime:0.0011s ]
+
+[ 2015-08-18T04:18:32+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: call GetInfoByLabAndPage(3,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:18:33+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: call GetInfoByLabAndPage(4,1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:18:34+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2015-08-18T04:18:35+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:21:54+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2015-08-18T04:21:54+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:23:07+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003896s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003939s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2015-08-18T04:23:07+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:23:09+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:23:09+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:23:16+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=4&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: call GetHomeInfo(4,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:23:18+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=5&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(5,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:23:19+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=6&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: call GetHomeInfo(6,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:23:20+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=7&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: call GetHomeInfo(7,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:23:40+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000115s ]
+
+[ 2015-08-18T04:23:41+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:23:43+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:23:43+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:24:36+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003703s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2015-08-18T04:24:37+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:24:38+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:24:39+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:24:39+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:24:41+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=4&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: call GetHomeInfo(4,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:24:42+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=5&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+SQL: call GetHomeInfo(5,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:24:44+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=6&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: call GetHomeInfo(6,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:25:08+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=7&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: call GetHomeInfo(7,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:25:21+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=8&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: call GetHomeInfo(8,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:25:22+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=9&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: call GetHomeInfo(9,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:26:35+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=10&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: call GetHomeInfo(10,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:26:36+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=11&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+SQL: call GetHomeInfo(11,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:29:51+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003752s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2015-08-18T04:29:51+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:31:21+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003790s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2015-08-18T04:31:21+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:31:23+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:31:24+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:31:24+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:31:26+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=4&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(4,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:31:27+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=5&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: call GetHomeInfo(5,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:31:30+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=6&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: call GetHomeInfo(6,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:31:51+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: call GetInfoByLabAndPage(1,0,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:31:52+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: call GetInfoByLabAndPage(2,0,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:31:52+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: call GetInfoByLabAndPage(3,0,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:31:53+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: call GetInfoByLabAndPage(4,0,4) [ RunTime:0.0010s ]
+
+[ 2015-08-18T04:31:56+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: call GetInfoByLabAndPage(1,0,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:31:58+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2015-08-18T04:31:58+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:31:59+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:32:00+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:32:00+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:32:34+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000138s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000130s ]
+
+[ 2015-08-18T04:32:34+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:32:35+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:32:36+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:32:37+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2015-08-18T04:32:38+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:32:39+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:32:39+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:32:39+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:32:41+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2015-08-18T04:32:41+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:32:42+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:32:43+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:32:45+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000075s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000111s ]
+
+[ 2015-08-18T04:32:46+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:32:46+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:32:47+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:32:48+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2015-08-18T04:32:49+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:32:49+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:32:50+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:32:51+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2015-08-18T04:32:52+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:32:53+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:32:53+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:32:54+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2015-08-18T04:32:55+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:32:56+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:32:56+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:32:56+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:18+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000110s ]
+
+[ 2015-08-18T04:35:19+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:35:20+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:35:20+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:35:21+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2015-08-18T04:35:21+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:22+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:22+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:35:23+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:35:23+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2015-08-18T04:35:24+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:24+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:35:24+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:35:25+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:25+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2015-08-18T04:35:25+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:26+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:27+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:27+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:35:27+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2015-08-18T04:35:28+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:28+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:35:29+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:35:29+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004085s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2015-08-18T04:35:30+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:35:30+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:35:31+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:31+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000121s ]
+
+[ 2015-08-18T04:35:31+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=3&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000056s ]
+SQL: call GetHomeInfo(3,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:31+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:35:32+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:35:33+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=2&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+SQL: call GetHomeInfo(2,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:33+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003858s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003908s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2015-08-18T04:35:34+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:35:36+08:00 ] 123.138.79.12 /temp/index.php/Api/Like.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `yf_user_like` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_user_like` WHERE ( fk_uid = 1 AND fk_sid =1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `yf_user_like` (`fk_uid`,`fk_sid`,`insert_ime`) VALUES ('1','1','1439843736') [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 127 行.
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 127 行.
+SQL: SELECT `likes` FROM `yf_style` WHERE ( sid=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `yf_style` SET `likes`='1' WHERE ( sid=1 ) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:35:38+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0006s ]
+
+[ 2015-08-18T04:35:40+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000114s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000110s ]
+
+[ 2015-08-18T04:35:40+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:35:42+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0005s ]
+
+[ 2015-08-18T04:37:38+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2015-08-18T04:37:39+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0010s ]
+
+[ 2015-08-18T04:37:43+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0009s ]
+
+[ 2015-08-18T04:37:45+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005366s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2015-08-18T04:37:46+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000135s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:37:47+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:42:09+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2015-08-18T04:42:10+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:42:13+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=1&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000070s ]
+SQL: call GetHomeInfo(1,4) [ RunTime:0.0008s ]
+
+[ 2015-08-18T04:42:15+08:00 ] 123.138.79.12 /temp/index.php/Api/Like.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `yf_user_like` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_user_like` WHERE ( fk_uid = 1 AND fk_sid =3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `yf_user_like` (`fk_uid`,`fk_sid`,`insert_ime`) VALUES ('1','3','1439844135') [ RunTime:0.0018s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 127 行.
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 127 行.
+SQL: SELECT `likes` FROM `yf_style` WHERE ( sid=3 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `yf_style` SET `likes`='1' WHERE ( sid=3 ) [ RunTime:0.0015s ]
+
+[ 2015-08-18T04:45:48+08:00 ] 123.138.79.12 /temp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `yf_label` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `yf_label`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `yf_banner` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `yf_banner`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2015-08-18T04:45:49+08:00 ] 123.138.79.12 /temp/index.php/Api/Style.html?page=0&labelid=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: call GetHomeInfo(0,4) [ RunTime:0.0007s ]
+
+[ 2015-08-18T04:45:51+08:00 ] 123.138.79.12 /temp/index.php/Api/Like.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `yf_user_like` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `yf_user_like` WHERE ( fk_uid = 1 AND fk_sid =1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: DELETE FROM `yf_user_like` WHERE `ulid` = 3 [ RunTime:0.0022s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 114 行.
+SQL: SHOW COLUMNS FROM `yf_style` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant likes - assumed 'likes' /var/www/html/temp/Yuefa/Yuefa/Controller/ApiController.class.php 第 114 行.
+SQL: SELECT `likes` FROM `yf_style` WHERE ( sid=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `yf_style` SET `likes`='0' WHERE ( sid=1 ) [ RunTime:0.0018s ]
+

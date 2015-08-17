@@ -14,7 +14,7 @@
 	<meta http-equiv="Cache-Control" content="no-siteapp"/>
 
 	<!-- 样式和图标引入 -->
-	<link rel="stylesheet" href="/aliyun_2/Public/yf/css/ucenter/style.css">
+	<link rel="stylesheet" href="/temp/Public/yf/css/ucenter/style.css">
 </head>
 <body>
 	<header class="headbar">
@@ -25,13 +25,13 @@
 	<nav class="headmanager">
 		<a href="<?php echo U('Yuefa/Index/index');?>">
 			<div class="headcol">
-				<img src="/aliyun_2/Public/yf/images/ucenter/toufa2.png">
+				<img src="/temp/Public/yf/images/ucenter/toufa2.png">
 				<span>选发型</span>
 			</div>
 		</a>
 		<a href="<?php echo U('Yuefa/Index/home');?>">
 			<div class="headcol activeheadcol">
-				<img src="/aliyun_2/Public/yf/images/ucenter/yonghu2.png">
+				<img src="/temp/Public/yf/images/ucenter/yonghu2.png">
 				<span>我的约发</span>
 			</div>
 		</a>
@@ -40,11 +40,11 @@
 	<section class="centercontent">
 		<a href="<?php echo U('Yuefa/Index/Orders');?>">
 			<span>我的预约</span>
-			<img src="/aliyun_2/Public/yf/images/ucenter/arrow.png">
+			<img src="/temp/Public/yf/images/ucenter/arrow.png">
 		</a>
 		<a href="<?php echo U('Yuefa/Index/likes');?>">
 			<span>我赞过的</span>
-			<img src="/aliyun_2/Public/yf/images/ucenter/arrow.png">
+			<img src="/temp/Public/yf/images/ucenter/arrow.png">
 		</a>
 	</section>
 
