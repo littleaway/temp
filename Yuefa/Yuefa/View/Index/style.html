@@ -36,8 +36,8 @@
 	</section>
 
 	<section class="masterpic">
-		<div class="masterbg"></div>
-		<div class="mastercicle"></div>
+		<div class="masterbg" style="background-image:url({:$barber['headpic_url']})" alt="masterpic"></div>
+		<div class="mastercicle" style="background-image:url({:$barber['headpic_url']})" alt="masterpic"></div>
 		<h2>{:$barber['name']}</h2>
 	</section>
 
@@ -74,7 +74,7 @@
 			</div>
 			<div class="inlinecol">
 				<if condition="count($styles) egt 2">
-					<for start="0" end="count($styles)" step="2">
+					<for start="1" end="count($styles)" step="2">
 					<div class="workscard">
 						<img src="{$styles[$i]['pic_url']}">
 						<div class="carddetail">

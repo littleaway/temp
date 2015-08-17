@@ -30,32 +30,33 @@ class ApiController extends Controller {
     }
     public function Style(){
 		$labelid=I('get.labelid');
-//		var_dump($labelid);
-		$Model=new \Think\Model();
-
+//		$page_num=I('get.page',1);
+//		$Model=new \Think\Model();
+//		$PAGE_LIMIT=4;
     	if ($labelid>0) {
-    		$style=M('relation_label_style')->where('fk_label = '.$labelid)->join('__STYLE__ ON __STYLE__.sid = __RELATION_LABEL_STYLE__.fk_style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->page(I('get.page',1).',8')->select();
+    		$style=M('relation_label_style')->where('fk_label = '.$labelid)->join('__STYLE__ ON __STYLE__.sid = __RELATION_LABEL_STYLE__.fk_style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->order('yf_style.insert_time')->page(I('get.page',1).',8')->select();
 			$style_num=M('relation_label_style')->where('fk_label = '.$labelid)->join('__STYLE__ ON __STYLE__.sid = __RELATION_LABEL_STYLE__.fk_style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->count();
+//			$GetInfo='call GetInfoByLabAndPage('.$labelid.','.$page_num.','.$PAGE_LIMIT.')';
     	}else{
-//			$style=M('style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')
-//			$style_num=M('style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->count();
-			$GetInHome='call GetInfoInHome()';
-			$style=$Model->query($GetInHome);
-			$style_num=10;
-
-
+			$style=M('style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->order('yf_style.insert_time')->page(I('get.page',1).',8')->select();
+			$style_num=M('style')->join('__BARBER__ ON __BARBER__.bid = __STYLE__.fk_bid')->count();
+//			$GetInfo='call GetHomeInfo('.$page_num.','.$PAGE_LIMIT.')';
     	}
-		
+
+//		$style=$Model->query($GetInfo);
+//		$style_num=count($style);
+
 		if ($style_num>=0&&$style!=null){
 		for ($i=0; $i < count($style); $i++) { 
 			$data_arr[]=array(
 					'id' =>$style[$i]['sid'] ,
 					'picurl' =>$style[$i]['pic_url'] , 
-					'piclink' =>"",
+					'piclink' =>U('Index/Style').'?sid='.$style[$i]['sid'],
 					'headurl' =>$style[$i]['headpic'] , 
 					'headlink' =>U('Index/Barber').'?bid='.$style[$i]['bid'],
 					'mastername' =>$style[$i]['name'] , 
-					'likednumber' =>M('user_like')->where('fk_sid = '.$style[$i]['sid'])->count(),
+//					'likednumber' =>M('user_like')->where('fk_sid = '.$style[$i]['sid'])->count(),
+					'likednumber'=>$style[$i]['likes']
 					);
 		}
 		$re_data=array(
@@ -99,10 +100,14 @@ class ApiController extends Controller {
     }
     public function Like()
     {
-    	if (session('uid')&&I('post.id')){
-	    	$temp=M('user_like')->where("fk_uid = ".session('uid')." AND fk_sid =".I('post.id'))->find();
+		$id=I('get.id',0);
+
+    	if (session('uid')&&$id){
+	    	$temp=M('user_like')->where("fk_uid = ".session('uid')." AND fk_sid =".$id)->find();
 	    	if ($temp) {
 	    		M('user_like')->delete($temp['ulid']);
+				$data[likes]=M('style')->where('sid='.$id)->getField(likes)-1;
+				M('style')->where('sid='.$id)->save($data);
 	    		$re_data=array(
 					'Error' =>'0' ,
 					'result'=>'success',
@@ -112,8 +117,10 @@ class ApiController extends Controller {
 	    	}else{
 				M('user_like')->add(array(
 	    			'fk_uid'=>session('uid'),
-	    			'fk_sid'=>I('post.id'),
+	    			'fk_sid'=>$id,
 	    			'insert_ime'=>time()));
+				$data[likes]=M('style')->where('sid='.$id)->getField(likes)+1;
+				M('style')->where('sid='.$id)->save($data);
 	    		$re_data=array(
 					'Error' =>'0' ,
 					'result'=>'success',

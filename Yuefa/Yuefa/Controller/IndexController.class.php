@@ -18,7 +18,7 @@ class IndexController extends Controller {
 		$this->assign('barber',$barber);
 		$books=M('order_type')->where('fk_bid = '.I('get.bid','1'))->select();
 		$this->assign('books',$books);
-		$styles=M('style')->where('fk_bid = '.I('get.bid','1'))->select();
+		$styles=M('style')->where('fk_bid = '.I('get.bid','1'))->order('likes desc')->select();
 		$this->assign('styles',$styles);
 		$this->assign('ordernum',M('orders')->where('fk_bid = '.I('get.bid','1'))->count());
 		$this->display('barber');
@@ -38,7 +38,7 @@ class IndexController extends Controller {
 		$this->assign('bid',I('get.bid','1'));
 		$this->display('sure');
 	}
-	public function style()
+	public function Style()
 	{
 		$this->assign('sid',I('get.sid','1'));
 		$style=M('style')->find(I('get.sid','1'));
@@ -49,7 +49,7 @@ class IndexController extends Controller {
 		$this->assign('barber',$barber);
 		$books=M('order_type')->where('fk_bid = '.$style['fk_bid'])->select();
 		$this->assign('books',$books);
-		$styles=M('style')->where('fk_bid = '.$style['fk_bid'])->select();
+		$styles=M('style')->where('fk_bid = '.$style['fk_bid'])->order('likes desc')->select();
 		$this->assign('styles',$styles);
 		$this->display('style');
 	}
