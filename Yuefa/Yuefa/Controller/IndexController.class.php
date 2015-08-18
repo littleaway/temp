@@ -61,9 +61,5 @@ class IndexController extends Controller {
 	{
 		$this->display('likes');
 	}
-	public function insert_order()
-	{
-		dump(I('post.'));
-	}
 
 }

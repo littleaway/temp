@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
@@ -14,7 +14,7 @@
 	<meta http-equiv="Cache-Control" content="no-siteapp"/>
 
 	<!-- 样式和图标引入 -->
-	<link rel="stylesheet" href="__CSS__/orders/style.css">
+	<link rel="stylesheet" href="/temp/Public/yf/css/orders/style.css">
 </head>
 <body>
 	<header class="headbar">
@@ -38,22 +38,20 @@
 	</nav>
 
 	<section class="bookcontent">
-		<foreach name="orders" item="vo" >
-			   <div class="bookcard">
+		<?php if(is_array($orders)): foreach($orders as $key=>$vo): ?><div class="bookcard">
 					<div class="booktime">
-						<h4>{$vo['order_time']|date="Y-m-d",###}</h4>
-						<h5>{$vo['order_time']|date="H:i",###}</h5>
+						<h4><?php echo (date("Y-m-d",$vo['order_time'])); ?></h4>
+						<h5><?php echo (date("H:i",$vo['order_time'])); ?></h5>
 					</div>
 					<div class="bookdetail">
-						<p>预约昵称：{$vo['name']}</p>
-						<p>预约电话：{$vo['tel']}</p>
-						<p>预约老师：{$vo['barber_name']}</p>
-						<p>美发类型：{$vo['type_name']}</p>
-						<p>店铺位置：{$vo['position']}</p>
-						<span class="price">{$vo['cost']}元</span>
+						<p>预约昵称：<?php echo ($vo['name']); ?></p>
+						<p>预约电话：<?php echo ($vo['tel']); ?></p>
+						<p>预约老师：<?php echo ($vo['barber_name']); ?></p>
+						<p>美发类型：<?php echo ($vo['type_name']); ?></p>
+						<p>店铺位置：<?php echo ($vo['position']); ?></p>
+						<span class="price"><?php echo ($vo['cost']); ?>元</span>
 					</div>
-				</div> 
-		</foreach>
+				</div><?php endforeach; endif; ?>
 	</section>
 
 

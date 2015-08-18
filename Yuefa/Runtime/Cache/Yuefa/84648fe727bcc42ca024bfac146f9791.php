@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
@@ -14,7 +14,7 @@
 	<meta http-equiv="Cache-Control" content="no-siteapp"/>
 
 	<!-- 样式和图标引入 -->
-	<link rel="stylesheet" href="__CSS__/likes/style.css">
+	<link rel="stylesheet" href="/temp/Public/yf/css/likes/style.css">
 </head>
 <body>
 	<header class="headbar">
@@ -64,7 +64,7 @@ $(function(){
 			// 写入提交赞的URL
 			thisRef.data("done",true);
 			$.post(
-				"{:U('Yuefa/Api/Like')}"
+				"<?php echo U('Yuefa/Api/Like');?>"
 				, { "id": id },function(){
 				thisRef.parent().find("span").text(likednumber);
 			});
@@ -77,7 +77,7 @@ $(function(){
         var col = 1;
         var getmore = function (pagenow) {
             $.getJSON(
-                    '{:U("Yuefa/Api/GetLikes")}?page=' + pagenow,
+                    '<?php echo U("Yuefa/Api/GetLikes");?>?page=' + pagenow,
                     function (Results, textStatus) {
                         if (Results.status != 404) {
                             $.each(Results.result.details, function (index, card) {
@@ -88,7 +88,7 @@ $(function(){
                                 var mastername = card['mastername'];
                                 var likednumber = card['likednumber'];
                                 var id = card['id'];
-                                var str = "<div id='" + id + "' class='workscard'><a href=" + piclink + "><img src='" + picurl + "'></a><div class='carddetail'><a href='" + headlink + "'><div class='headpic' style=\"background-image: url('" + headurl + "');\"></div></a><h3>" + mastername + "</h3><img src='__IMG__/index/heart.png'><span>" + likednumber + "</span></div></div>"
+                                var str = "<div id='" + id + "' class='workscard'><a href=" + piclink + "><img src='" + picurl + "'></a><div class='carddetail'><a href='" + headlink + "'><div class='headpic' style=\"background-image: url('" + headurl + "');\"></div></a><h3>" + mastername + "</h3><img src='/temp/Public/yf/images/index/heart.png'><span>" + likednumber + "</span></div></div>"
                                 $(".linecol" + col).append(str);
                                 col = (col === 1 ? 2 : 1);
                             });

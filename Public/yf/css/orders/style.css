@@ -75,10 +75,26 @@ body{
 	right: 0px;
 }
 
-
-
-
-
-
-
+.headmanager{
+        height: 55px;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        background-color: #fff;
+        z-index: 999;
+        font-size: 10px;
+}
+.headmanager a{
+        overflow: hidden;
+        text-decoration: none;
+}
+.headmanager .headcol{
+        float: left;
+        width: 50%;
+        text-align: center;
+        color: #929292;
+}
+.headmanager .activeheadcol{
+        color: #ff6599;
+}
 

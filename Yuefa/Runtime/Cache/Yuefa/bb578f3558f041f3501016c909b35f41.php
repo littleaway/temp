@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
@@ -15,7 +15,7 @@
 
 	<!-- 样式和图标引入 -->
 	<link rel="stylesheet" type="text/css" href="http://cdn.amazeui.org/amazeui/2.4.1/css/amazeui.min.css">
-	<link rel="stylesheet" href="__CSS__/sure/style.css">
+	<link rel="stylesheet" href="/temp/Public/yf/css/sure/style.css">
 </head>
 <body>
 	<header class="headbar">
@@ -50,9 +50,7 @@
 				<div class="inputwrap headkindselect">
 					<select id="headkind">
 						<option value="0">--请选择--</option>
-						<foreach name="books" item="vo" >
-							<option value="{$vo['otid']}">{$vo['type_name']}：{$vo['cost']}元</option>
-						</foreach>
+						<?php if(is_array($books)): foreach($books as $key=>$vo): ?><option value="<?php echo ($vo['otid']); ?>"><?php echo ($vo['type_name']); ?>：<?php echo ($vo['cost']); ?>元</option><?php endforeach; endif; ?>
 					</select>
 					<span>请选择你的服务项目</span>
 				</div>
@@ -64,7 +62,7 @@
 					<input placeholder="请选择具体时间" type="time" id="time" name="user_time" />
 					<span>请选择日期与时间</span>
 				</div>
-				<input type="hidden" id="bid" name="barberid" value="{:$bid}"/>
+				<input type="hidden" id="bid" name="barberid" value="<?php echo $bid;?>"/>
 			</fieldset>
 		</form>
 	</section>
@@ -85,10 +83,10 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src="__JS__/sure/jquery.min.js"></script>
+	<script type="text/javascript" src="/temp/Public/yf/js/sure/jquery.min.js"></script>
 	<script type="text/javascript" src="http://cdn.amazeui.org/amazeui/2.4.1/js/amazeui.min.js"></script>
-	<script type="text/javascript" src="__JS__/sure/form.js"></script>
-	<script type="text/javascript" src="__JS__/sure/date.js"></script>
+	<script type="text/javascript" src="/temp/Public/yf/js/sure/form.js"></script>
+	<script type="text/javascript" src="/temp/Public/yf/js/sure/date.js"></script>
 	<script type="text/javascript">
 	$(function(){
 		$("#yuefaform").submit(function(){
@@ -104,7 +102,7 @@
 			if (isOK) {
 				// 要写入的url
 				$.post(
-					"{:U('Yuefa/Api/Order')}"
+					"<?php echo U('Yuefa/Api/Order');?>"
 					,{
 						"bid": bid,
 						"username": username,
@@ -115,7 +113,7 @@
 					},function(data){
 						$('#my-alert').modal('open').on('closed.modal.amui', 
 							function(){
-								window.location.href="{:U('Yuefa/Index/Orders')}"; 
+								window.location.href="<?php echo U('Yuefa/Index/Orders');?>"; 
 							}
 						);
 					},"json");
