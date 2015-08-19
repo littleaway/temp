@@ -95,12 +95,18 @@
 			var username = $("#username").val();
 			var tel = $("#phonenumber").val();
 			var headkind = $("#headkind").val();
-			var date = $("#date").val();
-			var time = $("#time").val();
-			alert(tel);
-			alert(headkind);
+			var j_date = $("#date").val();
+			var j_time = $("#time").val();
+		//	alert(tel);
+		//	alert(headkind);
 			if (isOK) {
 				// 要写入的url
+			var conf = confirm("确认提交订单吗？");
+				if(conf==true){
+					//commit data to server here
+					alert("您好！发型师 <?php echo ($barber_name); ?> 将于"+j_date+' '+j_time+"在"+"<?php echo ($barber_position); ?> 等候您的光临，请按时到店。");				
+				//	alert('1');
+				}		
 				$.post(
 					"<?php echo U('Yuefa/Api/Order');?>"
 					,{
@@ -108,15 +114,19 @@
 						"username": username,
 						"tel": tel,
 						"headkind": headkind,
-						"date": date,
-						"time": time
-					},function(data){
-						$('#my-alert').modal('open').on('closed.modal.amui', 
-							function(){
-								window.location.href="<?php echo U('Yuefa/Index/Orders');?>"; 
-							}
-						);
-					},"json");
+						"date": j_date,
+						"time": j_time
+					}
+				//	,function(){
+				//		$('#my-alert').modal('open').on('closed.modal.amui', 
+				//			function(){
+				//				window.location.href="<?php echo U('Yuefa/Index/Orders');?>"; 
+				//			}
+				//		);
+				//		alert('123');
+				//	},
+				,"json");
+				window.open(<?php echo U('Yuefa/Index/Orders');?>);
 			}else{
 				alert("请正确输入表单内容")
 				return false;

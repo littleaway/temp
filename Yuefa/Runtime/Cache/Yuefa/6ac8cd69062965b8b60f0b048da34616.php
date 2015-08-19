@@ -50,7 +50,7 @@
 		<h3>作品展示</h3>
 		<div class="workscardwrap">
 			<div class="inlinecol">
-				<?php $__FOR_START_869241695__=0;$__FOR_END_869241695__=count($styles);for($i=$__FOR_START_869241695__;$i < $__FOR_END_869241695__;$i+=2){ ?><div class="workscard">
+				<?php $__FOR_START_1949121291__=0;$__FOR_END_1949121291__=count($styles);for($i=$__FOR_START_1949121291__;$i < $__FOR_END_1949121291__;$i+=2){ ?><div class="workscard">
 						<img src="<?php echo ($styles[$i]['pic_url']); ?>">
 						<div class="carddetail">
 							<div class="headpic" style="background-image:url(<?php echo $barber['headpic_url'];?>)" alt="masterpic"></div>
@@ -61,7 +61,7 @@
 					</div><?php } ?>				
 			</div>
 			<div class="inlinecol">
-				<?php if(count($styles) >= 2): $__FOR_START_203430901__=1;$__FOR_END_203430901__=count($styles);for($i=$__FOR_START_203430901__;$i < $__FOR_END_203430901__;$i+=2){ ?><div class="workscard">
+				<?php if(count($styles) >= 2): $__FOR_START_933692211__=1;$__FOR_END_933692211__=count($styles);for($i=$__FOR_START_933692211__;$i < $__FOR_END_933692211__;$i+=2){ ?><div class="workscard">
 						<img src="<?php echo ($styles[$i]['pic_url']); ?>">
 						<div class="carddetail">
 							<div class="headpic" style="background-image:url(<?php echo $barber['headpic_url'];?>)" alt="masterpic"></div>

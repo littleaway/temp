@@ -35,7 +35,12 @@ class IndexController extends Controller {
 	{
 		$books=M('order_type')->where('fk_bid = '.I('get.bid','1'))->select();
 		$this->assign('books',$books);
-		$this->assign('bid',I('get.bid','1'));
+		$bid=I('get.bid',1);
+		$this->assign('bid',$bid);
+		$barber_name=M('barber')->where('bid='.$bid)->getField('name');
+		$barber_position=M('barber')->where('bid='.$bid)->getField('position');
+		$this->assign('barber_name',$barber_name);
+		$this->assign('barber_position',$barber_position);
 		$this->display('sure');
 	}
 	public function Style()
